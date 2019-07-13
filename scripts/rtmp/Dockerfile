@@ -10,8 +10,8 @@
 ###########
 FROM golang AS build-backend
 
-COPY . /go/src/github.com/praveen001/go-rtmp-web-server
-RUN cd /go/src/github.com/praveen001/go-rtmp-web-server && go get && go install
+COPY . /go/src/github.com/Ranganaths/go-rtmp-web-server
+RUN cd /go/src/github.com/Ranganaths/go-rtmp-web-server && go get && go install
 
 #########
 # Nginx #
